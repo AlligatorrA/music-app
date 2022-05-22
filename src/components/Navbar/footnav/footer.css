@@ -1,0 +1,8 @@
+.footer {
+    color: var(--main-text-one);
+    text-shadow: 20px 10px 20px;
+    font-style: italic;
+    letter-spacing: 2px;
+    font-family: 'Mea Culpa', cursive;
+    font-family: 'Tapestry', cursive;
+}

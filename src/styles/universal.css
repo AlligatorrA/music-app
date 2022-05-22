@@ -1,0 +1,62 @@
+:root {
+    --primary-bg: #000033;
+    --main-bg-one: #001a66;
+    --main-bg-two: #002080;
+    --main-text-three: #ff00ff;
+    --main-text-one: blue;
+    --main-text-two: blue;
+    /* --main-text-two: #ffb3ff; */
+    background-color: #00001f;
+    --main-text-night: #a824bd;
+    font-size: 18px;
+}
+
+::selection {
+    color: rgb(248, 248, 248);
+    background-color: rgb(19, 106, 0);
+}
+
+body {
+    padding: 0em 3.6em;
+    box-sizing: border-box;
+    color: white;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+    margin: 0.1em;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    border: none;
+}
+
+@media screen and (max-width:600px) {
+    body {
+        padding: 0em 0em;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: forestgreen;
+    border-radius: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 15px;
+    background-color: blue;
+}

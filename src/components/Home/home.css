@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Mea+Culpa&family=Tapestry&display=swap');
+
+.home {
+    display: grid;
+    height: 85vh;
+    grid-template-columns: repeat(10, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    background-color: var(--primary-bg);
+    border-bottom-left-radius: 4em;
+    border-bottom-right-radius: 4em;
+}
+
+.home:nth-child(odd) {
+    background-color: #000727;
+}
+
+.home_top_left {
+    grid-column: 1/6;
+    grid-row: 1/7;
+    max-width: 49vw;
+    align-items: flex-start;
+    padding: .9em;
+    text-shadow: 20px 10px 20px;
+    font-style: italic;
+    letter-spacing: 2px;
+    font-family: 'Mea Culpa', cursive;
+    font-family: 'Tapestry', cursive;
+    z-index: 1;
+}
+
+
+.home_top_right {
+    grid-column: 6/11;
+    grid-row: 1/7;
+    max-width: 49vw;
+
+}
+
+.htr_pic {
+    height: 100%;
+    position: relative;
+    transform: rotate(10deg);
+    animation: lowSpin 5s ease-in-out 0s 1 alternate;
+    filter: drop-shadow(10px 10px 105px var(--main-text-one));
+}
+
+@keyframes lowSpin {
+    0% {
+        transform: rotate(-360deg);
+    }
+
+    50% {
+        transform: rotate(-5deg);
+    }
+}
+
+.bigger_Font {
+    font: 4em sans-serif;
+    font-style: italic;
+    letter-spacing: 1px;
+    font-family: 'Mea Culpa', cursive;
+    font-family: 'Tapestry', cursive;
+}
+
+.odd_home_box {
+    grid-column: 1/11;
+    color: var(--main-text-one);
+    text-shadow: 20px 10px 20px;
+    font-style: italic;
+    letter-spacing: 2px;
+    font-family: 'Mea Culpa', cursive;
+    font-family: 'Tapestry', cursive;
+}
+
+.slide_wrapper {
+    display: flex;
+    justify-content: space-around;
+    color: var(--main-text-one);
+}
+
+.box {
+    min-height: 9rem;
+    width: 11rem;
+    padding: 1em 3px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: width 2s ease-in-out;
+}
+
+.box:hover {
+    transform: rotate(10deg);
+    font-size: 1.1em;
+}
+
+.box_txt {
+    margin: 1em 0;
+}
+
+.box_txt_p {
+    margin: .7em 7px;
+}
+
+.htr_pic2 {
+    height: 100%;
+    position: relative;
+    transform: rotate(10deg);
+    animation: lowSpin 5s ease-in-out 0s 1 alternate;
+    /* filter: drop-shadow(10px 10px 75px var(--main-text-three)); */
+    filter: drop-shadow(10px 10px 75px red);
+}
+
+.inner_form {
+    margin: 1em;
+    display: flex;
+    width: 25rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+    z-index: 2;
+}
+
+@media screen and (max-width:700px) {
+    .htr_pic {
+        display: none;
+    }
+
+    .htr_pic2 {
+        display: none;
+    }
+
+    .inner_form {
+        max-width: 99vw;
+    }
+
+    .home_top_left {
+        grid-column: 1/11;
+        max-width: 99vw;
+    }
+
+    .home_top_right {
+        grid-column: 1/11;
+        grid-row: 1/7;
+        max-width: 99vw;
+    }
+}
+
+.search_box2 {
+    background-color: var(--main-text-one);
+    padding: 1px 4px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.search_input2 {
+    height: 2.6em;
+    outline: none;
+    border: none;
+    width: 100%;
+    background: transparent;
+    font-size: medium;
+    font-weight: 600;
+}

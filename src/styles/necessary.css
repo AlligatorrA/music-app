@@ -1,0 +1,43 @@
+.all_center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.just_center {
+    display: flex;
+    justify-content: center;
+}
+
+.align_center {
+    display: flex;
+    align-items: center;
+}
+
+.just_btw {
+    display: flex;
+    justify-content: space-between;
+}
+
+.coln_flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn {
+    padding: 0.7em;
+    margin: 4px;
+    border-radius: 6px;
+    border: 1px solid var(--main-text-two);
+    text-shadow: 2px 2px 10px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    color: var(--main-text-two);
+    font-weight: 500;
+    background-color: transparent;
+}
+
+.spacer_01 {
+    padding: 1em;
+    width: 100%;
+}
